@@ -1,0 +1,56 @@
+.action-network-email-form {
+  .success-message {
+    @apply hidden;
+
+    background-color: #4BB543;
+  }
+
+  input[type='email'] {
+    @apply block;
+    @apply leading-relaxed;
+    @apply align-middle;
+    @apply font-sans;
+    @apply p-2;
+    @apply border;
+    @apply rounded-tl;
+    @apply rounded-bl;
+    @apply rounded-tr-none;
+    @apply rounded-br-none;
+    @apply text-sm;
+    @apply h-auto;
+  }
+
+  button[type='submit'] {
+    @apply font-display;
+    @apply border;
+    @apply border-secondary;
+    @apply border-r-0;
+    @apply border-l-0;
+    @apply uppercase;
+    @apply bg-primary;
+    @apply tracking-wide;
+    @apply text-white;
+    @apply rounded-tr;
+    @apply rounded-br;
+    @apply rounded-tl-none;
+    @apply rounded-bl-none;
+    @apply h-auto;
+    @apply text-base;
+    @apply p-3;
+
+    @hover {
+      @apply bg-primary-darker;
+    }
+  }
+
+  &.form-submission-success {
+    .success-message {
+      @apply block;
+    }
+ 
+    input,
+    button {
+      @apply hidden;
+    }
+  }
+}
